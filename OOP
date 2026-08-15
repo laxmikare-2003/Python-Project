@@ -1,1 +1,15 @@
+********Starting From the basic Concept OOP's in Python**********
 
+class student(person):
+    def __init__(self,sid,name,age,course,marks):
+        self._sid = sid
+        self._name = name
+        self._age = age
+        self._course = course
+        self._marks = marks
+
+    def display(self):
+        print(f"ID of Stduent :  {self._sid}  \nName of Student :  {self._name}   \nAge of Student :  {self._age}  \nCourse of Student : {self._course}  \nMarks of Student :  {self._marks}")
+
+S1 = student(101,"Laxmi",21,"Fullstack-Python",85)
+S1.display()
